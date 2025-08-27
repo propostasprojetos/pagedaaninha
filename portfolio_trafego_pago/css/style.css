@@ -1,0 +1,376 @@
+/* Estilos Tecnológicos e Animações */
+
+/* Variáveis CSS */
+:root {
+    --neon-blue: #00f5ff;
+    --neon-purple: #bf00ff;
+    --tech-dark: #0a0a0a;
+    --tech-gray: #1a1a1a;
+}
+
+/* Efeitos de Glow Tecnológico */
+.tech-glow {
+    text-shadow: 0 0 50px var(--neon-blue), 0 0 5px var(--neon-blue), 0 0 5px var(--neon-blue);
+    animation: glow-pulse 2s ease-in-out infinite alternate;
+}
+
+.tech-glow-strong {
+    box-shadow: 0 0 1px var(--neon-blue), 0 0 1px var(--neon-blue), 0 0 1px var(--neon-blue);
+    animation: glow-pulse-strong 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow-pulse {
+    from {
+        text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue), 0 0 30px var(--neon-blue);
+    }
+    to {
+        text-shadow: 0 0 15px var(--neon-blue), 0 0 25px var(--neon-blue), 0 0 35px var(--neon-blue);
+    }
+}
+
+@keyframes glow-pulse-strong {
+    from {
+        box-shadow: 0 0 20px var(--neon-blue), 0 0 40px var(--neon-blue), 0 0 60px var(--neon-blue);
+    }
+    to {
+        box-shadow: 0 0 30px var(--neon-blue), 0 0 50px var(--neon-blue), 0 0 70px var(--neon-blue);
+    }
+}
+
+/* Botões Tecnológicos */
+.tech-btn {
+    background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+    border: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.tech-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 245, 255, 0.3);
+}
+
+.tech-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.tech-btn:hover::before {
+    left: 100%;
+}
+
+.tech-btn-outline {
+    border: 2px solid var(--neon-blue);
+    color: var(--neon-blue);
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.tech-btn-outline:hover {
+    background: var(--neon-blue);
+    color: var(--tech-dark);
+    box-shadow: 0 0 20px var(--neon-blue);
+}
+
+/* Elementos Flutuantes */
+.floating-element {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Cards de Serviços */
+.service-card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 245, 255, 0.2);
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent, rgba(0, 245, 255, 0.05), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-card:hover::before {
+    opacity: 1;
+}
+
+/* Cards de Cases */
+.case-card {
+    animation: fadeInUp 0.6s ease-out;
+    animation-fill-mode: both;
+}
+
+.case-card:nth-child(1) { animation-delay: 0.1s; }
+.case-card:nth-child(2) { animation-delay: 0.2s; }
+.case-card:nth-child(3) { animation-delay: 0.3s; }
+.case-card:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contadores Animados */
+.counter {
+    font-family: 'Courier New', monospace;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.counter::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple));
+    animation: counter-line 2s ease-in-out;
+}
+
+@keyframes counter-line {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Background de Partículas */
+#particles-bg {
+    background: radial-gradient(circle at 20% 50%, rgba(0, 245, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(191, 0, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(0, 245, 255, 0.05) 0%, transparent 50%);
+    animation: particles-move 20s ease-in-out infinite;
+}
+
+@keyframes particles-move {
+    0%, 100% {
+        background-position: 0% 50%, 100% 20%, 40% 80%;
+    }
+    33% {
+        background-position: 30% 70%, 70% 40%, 60% 60%;
+    }
+    66% {
+        background-position: 70% 30%, 30% 60%, 20% 40%;
+    }
+}
+
+/* Carrossel de Depoimentos */
+.carousel-container {
+    position: relative;
+}
+
+.carousel-track {
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+}
+
+.carousel-btn {
+    backdrop-filter: blur(10px);
+    background: rgba(26, 26, 26, 0.8);
+    transition: all 0.3s ease;
+}
+
+.carousel-btn:hover {
+    transform: scale(1.1);
+}
+
+.carousel-indicator {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.carousel-indicator.active {
+    background-color: var(--neon-blue);
+    box-shadow: 0 0 10px var(--neon-blue);
+}
+
+/* Animações de Entrada */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Efeitos de Hover para Links */
+a:hover {
+    transition: all 0.3s ease;
+}
+
+/* Scrollbar Personalizada */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--tech-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, var(--neon-purple), var(--neon-blue));
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .tech-glow {
+        font-size: 0.9em;
+    }
+    
+    .service-card {
+        margin-bottom: 1rem;
+    }
+    
+    .carousel-btn {
+        display: none;
+    }
+    
+    .case-card {
+        animation-delay: 0s;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+    
+    .counter {
+        font-size: 2rem;
+    }
+}
+
+/* Animações de Loading */
+.loading-animation {
+    position: relative;
+    overflow: hidden;
+}
+
+.loading-animation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 245, 255, 0.3), transparent);
+    animation: loading-sweep 2s infinite;
+}
+
+@keyframes loading-sweep {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Efeitos de Foco para Acessibilidade */
+button:focus,
+a:focus {
+    outline: 2px solid var(--neon-blue);
+    outline-offset: 2px;
+}
+
+/* Animação de Entrada para Seções */
+.section-animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.section-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efeitos de Texto Digitado */
+.typewriter {
+    overflow: hidden;
+    border-right: 2px solid var(--neon-blue);
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--neon-blue);
+    }
+}

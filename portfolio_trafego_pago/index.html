@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Tráfego Pago - Especialista Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-blue': '#00f5ff',
+                        'neon-purple': '#bf00ff',
+                        'tech-dark': '#0a0a0a',
+                        'tech-gray': '#1a1a1a'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-tech-dark text-white overflow-x-hidden">
+    <!-- Particles Background -->
+    <div id="particles-bg" class="fixed inset-0 z-0"></div>
+    
+    <!-- Header -->
+    <header class="relative z-10 navbar bg-tech-gray/80 backdrop-blur-md border-b border-neon-blue/20">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path>
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-tech-gray rounded-box w-52">
+                    <li><a href="#services" class="hover:text-neon-blue">Serviços</a></li>
+                    <li><a href="#cases" class="hover:text-neon-blue">Cases</a></li>
+                    <li><a href="#testimonials" class="hover:text-neon-blue">Depoimentos</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost text-xl font-bold tech-glow">
+                <span class="text-neon-blue">Digital</span>Expert
+            </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="#services" class="hover:text-neon-blue transition-colors">Serviços</a></li>
+                <li><a href="#cases" class="hover:text-neon-blue transition-colors">Cases</a></li>
+                <li><a href="#testimonials" class="hover:text-neon-blue transition-colors">Depoimentos</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a href="#contact" class="btn btn-outline btn-primary ">Contato</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative z-10 hero min-h-screen bg-gradient-to-br from-tech-dark via-tech-gray to-tech-dark">
+        <div class="hero-content text-center">
+            <div class="max-w-4xl">
+                <div class="floating-element mb-8">
+                    <div class="w-32 h-32 mx-auto bg-gradient-to-r from-neon-blue to-neon-purple rounded-full flex items-center justify-center tech-glow-strong">
+                        <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                        </svg>
+                    </div>
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-bold mb-6 ">
+                    Especialista em
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple">
+                        Tráfego Pago
+                    </span>
+                </h1>
+                <p class="text-xl lg:text-2xl mb-8 text-gray-300">
+                    Transformo investimentos em resultados através de estratégias avançadas de marketing digital
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#services" class="btn btn-primary btn-lg tech-btn">
+                        Ver Serviços
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                    </a>
+                    <a href="#cases" class="btn btn-outline btn-lg tech-btn-outline">Ver Cases</a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-neon-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="relative z-10 py-20 ">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 ">
+                    Nossos <span class="text-neon-blue">Serviços</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Soluções completas em marketing digital para maximizar seus resultados
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- Service Card 1 -->
+                <div class="card bg-tech-gray border border-neon-blue/20 shadow-xl hover:shadow-neon-blue/20 transition-all duration-300 service-card">
+                    <div class="card-body">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-neon-blue to-neon-purple rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-title text-2xl text-neon-blue">Google Ads</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            Campanhas otimizadas para máximo ROI com segmentação avançada e análise de dados em tempo real.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-400 space-y-1">
+                            <li>Pesquisa de palavras-chave</li>
+                            <li>Otimização de campanhas</li>
+                            <li>Relatórios detalhados</li>
+                            <li>Análise de concorrência</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="card bg-tech-gray border border-neon-purple/20 shadow-xl hover:shadow-neon-purple/20 transition-all duration-300 service-card">
+                    <div class="card-body">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-neon-purple to-neon-blue rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-title text-2xl text-neon-purple">Meta Ads</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            Estratégias avançadas no Facebook e Instagram para engajamento e conversões efetivas.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-400 space-y-1">
+                            <li>Criação de públicos personalizados</li>
+                            <li>Testes A/B de criativos</li>
+                            <li>Funil de vendas otimizado</li>
+                            <li>Remarketing estratégico</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="card bg-tech-gray border border-neon-blue/20 shadow-xl hover:shadow-neon-blue/20 transition-all duration-300 service-card">
+                    <div class="card-body">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-neon-blue to-neon-purple rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-title text-2xl text-neon-blue">Analytics & BI</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            Análise profunda de dados para tomada de decisões estratégicas baseadas em métricas reais.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-400 space-y-1">
+                            <li>Dashboards personalizados</li>
+                            <li>Análise de comportamento</li>
+                            <li>Métricas de performance</li>
+                            <li>Insights acionáveis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="card bg-tech-gray border border-neon-purple/20 shadow-xl hover:shadow-neon-purple/20 transition-all duration-300 service-card">
+                    <div class="card-body">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-neon-purple to-neon-blue rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="card-title text-2xl text-neon-purple">Consultoria Estratégica</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            Planejamento completo de marketing digital com foco em crescimento sustentável e escalável.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-400 space-y-1">
+                            <li>Auditoria completa</li>
+                            <li>Estratégia personalizada</li>
+                            <li>Acompanhamento mensal</li>
+                            <li>Otimização contínua</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases Section -->
+    <section id="cases" class="relative z-10 py-20 bg-tech-dark">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 tech-glow">
+                    Cases de <span class="text-neon-purple">Sucesso</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Resultados comprovados que transformaram negócios
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <!-- Case 1 -->
+                <div class="text-center case-card">
+                    <div class="bg-gradient-to-r from-neon-blue to-neon-purple p-1 rounded-2xl mb-4">
+                        <div class="bg-tech-gray rounded-2xl p-8">
+                            <div class="text-4xl lg:text-5xl font-bold text-neon-blue mb-2 counter" data-target="350" data-suffix="%">0%</div>
+                            <h3 class="text-xl font-semibold mb-2">Aumento no ROI</h3>
+                            <p class="text-gray-400">E-commerce de moda feminina</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="text-center case-card">
+                    <div class="bg-gradient-to-r from-neon-purple to-neon-blue p-1 rounded-2xl mb-4">
+                        <div class="bg-tech-gray rounded-2xl p-8">
+                            <div class="text-4xl lg:text-5xl font-bold text-neon-purple mb-2 counter" data-target="2.5" data-suffix="M">0M</div>
+                            <h3 class="text-xl font-semibold mb-2">Faturamento Gerado</h3>
+                            <p class="text-gray-400">Startup de tecnologia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="text-center case-card">
+                    <div class="bg-gradient-to-r from-neon-blue to-neon-purple p-1 rounded-2xl mb-4">
+                        <div class="bg-tech-gray rounded-2xl p-8">
+                            <div class="text-4xl lg:text-5xl font-bold text-neon-blue mb-2 counter" data-target="85" data-suffix="%">0%</div>
+                            <h3 class="text-xl font-semibold mb-2">Redução no CPA</h3>
+                            <p class="text-gray-400">Clínica de estética</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 4 -->
+                <div class="text-center case-card">
+                    <div class="bg-gradient-to-r from-neon-purple to-neon-blue p-1 rounded-2xl mb-4">
+                        <div class="bg-tech-gray rounded-2xl p-8">
+                            <div class="text-4xl lg:text-5xl font-bold text-neon-purple mb-2 counter" data-target="1200" data-suffix="+">0+</div>
+                            <h3 class="text-xl font-semibold mb-2">Leads Qualificados</h3>
+                            <p class="text-gray-400">Curso online</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="relative z-10 py-20 bg-tech-gray/50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 tech-glow">
+                    O que dizem nossos <span class="text-neon-blue">Clientes</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Depoimentos reais de quem confia no nosso trabalho
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="carousel-container relative">
+                    <div class="carousel-wrapper overflow-hidden">
+                        <div class="carousel-track flex transition-transform duration-500 ease-in-out">
+                            <!-- Testimonial 1 -->
+                            <div class="carousel-slide w-full flex-shrink-0">
+                                <div class="card bg-tech-gray border border-neon-blue/20 shadow-xl">
+                                    <div class="card-body text-center">
+                                        <div class="flex justify-center mb-4">
+                                            <div class="rating">
+                                                <input type="radio" name="rating-1" class="mask mask-star-2 bg-neon-blue" checked />
+                                                <input type="radio" name="rating-1" class="mask mask-star-2 bg-neon-blue" checked />
+                                                <input type="radio" name="rating-1" class="mask mask-star-2 bg-neon-blue" checked />
+                                                <input type="radio" name="rating-1" class="mask mask-star-2 bg-neon-blue" checked />
+                                                <input type="radio" name="rating-1" class="mask mask-star-2 bg-neon-blue" checked />
+                                            </div>
+                                        </div>
+                                        <p class="text-lg text-gray-300 mb-6 italic">
+                                            "Os resultados superaram todas as expectativas. Em apenas 3 meses, nosso ROI aumentou 350% e conseguimos escalar o negócio de forma sustentável."
+                                        </p>
+                                        <div class="flex items-center justify-center">
+                                            <div class="avatar mr-4">
+                                                <div class="w-12 rounded-full bg-gradient-to-r from-neon-blue to-neon-purple flex items-center justify-center">
+                                                    <span class="text-white font-bold">MC</span>
+                                                </div>
+                                            </div>
+                                            <div class="text-left">
+                                                <h4 class="font-semibold text-neon-blue">Maria Clara</h4>
+                                                <p class="text-gray-400">CEO, Fashion Store</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 2 -->
+                            <div class="carousel-slide w-full flex-shrink-0">
+                                <div class="card bg-tech-gray border border-neon-purple/20 shadow-xl">
+                                    <div class="card-body text-center">
+                                        <div class="flex justify-center mb-4">
+                                            <div class="rating">
+                                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-neon-purple" checked />
+                                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-neon-purple" checked />
+                                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-neon-purple" checked />
+                                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-neon-purple" checked />
+                                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-neon-purple" checked />
+                                            </div>
+                                        </div>
+                                        <p class="text-lg text-gray-300 mb-6 italic">
+                                            "Profissionalismo e expertise únicos. A estratégia desenvolvida nos ajudou a alcançar 2.5M em faturamento no primeiro ano de parceria."
+                                        </p>
+                                        <div class="flex items-center justify-center">
+                                            <div class="avatar mr-4">
+                                                <div class="w-12 rounded-full bg-gradient-to-r from-neon-purple to-neon-blue flex items-center justify-center">
+                                                    <span class="text-white font-bold">RS</span>
+                                                </div>
+                                            </div>
+                                            <div class="text-left">
+                                                <h4 class="font-semibold text-neon-purple">Roberto Silva</h4>
+                                                <p class="text-gray-400">Fundador, TechStart</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 3 -->
+                            <div class="carousel-slide w-full flex-shrink-0">
+                                <div class="card bg-tech-gray border border-neon-blue/20 shadow-xl">
+                                    <div class="card-body text-center">
+                                        <div class="flex justify-center mb-4">
+                                            <div class="rating">
+                                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-neon-blue" checked />
+                                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-neon-blue" checked />
+                                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-neon-blue" checked />
+                                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-neon-blue" checked />
+                                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-neon-blue" checked />
+                                            </div>
+                                        </div>
+                                        <p class="text-lg text-gray-300 mb-6 italic">
+                                            "A redução de 85% no CPA foi fundamental para nossa expansão. Agora conseguimos investir mais em crescimento com a mesma verba."
+                                        </p>
+                                        <div class="flex items-center justify-center">
+                                            <div class="avatar mr-4">
+                                                <div class="w-12 rounded-full bg-gradient-to-r from-neon-blue to-neon-purple flex items-center justify-center">
+                                                    <span class="text-white font-bold">AF</span>
+                                                </div>
+                                            </div>
+                                            <div class="text-left">
+                                                <h4 class="font-semibold text-neon-blue">Ana Ferreira</h4>
+                                                <p class="text-gray-400">Diretora, Clínica Bella</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Carousel Controls -->
+                    <button class="carousel-btn carousel-prev absolute left-4 top-1/2 transform -translate-y-1/2 btn btn-circle btn-outline border-neon-blue text-neon-blue hover:bg-neon-blue hover:text-black">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    <button class="carousel-btn carousel-next absolute right-4 top-1/2 transform -translate-y-1/2 btn btn-circle btn-outline border-neon-blue text-neon-blue hover:bg-neon-blue hover:text-black">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                    
+                    <!-- Carousel Indicators -->
+                    <div class="flex justify-center mt-8 space-x-2">
+                        <button class="carousel-indicator w-3 h-3 rounded-full bg-neon-blue/30 hover:bg-neon-blue transition-colors active" data-slide="0"></button>
+                        <button class="carousel-indicator w-3 h-3 rounded-full bg-neon-blue/30 hover:bg-neon-blue transition-colors" data-slide="1"></button>
+                        <button class="carousel-indicator w-3 h-3 rounded-full bg-neon-blue/30 hover:bg-neon-blue transition-colors" data-slide="2"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="relative z-10 py-20 bg-tech-dark">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl lg:text-5xl font-bold mb-6 tech-glow">
+                Pronto para <span class="text-neon-purple">Crescer?</span>
+            </h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Vamos conversar sobre como podemos transformar seus resultados digitais
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="mailto:contato@digitalexpert.com" class="btn btn-primary btn-lg tech-btn">
+                    Falar com Especialista
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                </a>
+                <a href="https://wa.me/5511999999999" class="btn btn-outline btn-lg tech-btn-outline">
+                    WhatsApp
+                    <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.63"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative z-10 footer footer-center p-10 bg-tech-gray text-base-content">
+        <div>
+            <div class="tech-glow mb-4">
+                <span class="text-2xl font-bold">
+                    <span class="text-neon-blue">Digital</span>Expert
+                </span>
+            </div>
+            <p class="text-gray-400">Transformando negócios através do marketing digital</p>
+            <p class="text-gray-500">© 2024 DigitalExpert. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
