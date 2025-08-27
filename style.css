@@ -15,7 +15,7 @@
 }
 
 .tech-glow-strong {
-    box-shadow: 0 0 1px var(--neon-blue), 0 0 1px var(--neon-blue), 0 0 1px var(--neon-blue);
+    box-shadow: 0 0 5px var(--neon-blue), 0 0 px var(--neon-blue), 0 0 60px var(--neon-blue);
     animation: glow-pulse-strong 3s ease-in-out infinite alternate;
 }
 
